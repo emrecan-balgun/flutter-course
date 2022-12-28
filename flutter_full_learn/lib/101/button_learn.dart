@@ -39,7 +39,7 @@ class ButtonLearn extends StatelessWidget {
         ElevatedButton(
           onPressed: () {}, 
           style: ElevatedButton.styleFrom(
-            // primary: Colors.black,
+            backgroundColor: Colors.black,
             shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
           ),
           child: Padding(
