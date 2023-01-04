@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class StatelessLearn extends StatelessWidget {
+  final String text = "Emre"; // final değişkenler sadece bir kere atanabilir
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
         body: Column(
       children: [
-        const TitleTextWidget(text: "A"),
+        TitleTextWidget(text: text), // best practise
         const TitleTextWidget(text: "B"),
         const TitleTextWidget(text: "C"),
         const _CustomContainer(),
