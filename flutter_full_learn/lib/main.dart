@@ -5,6 +5,7 @@ import 'package:flutter_full_learn/101/color_learn.dart';
 import 'package:flutter_full_learn/101/container_sized_box_learn.dart';
 import 'package:flutter_full_learn/101/icon_learn.dart';
 import 'package:flutter_full_learn/101/scaffold_learn.dart';
+import 'package:flutter_full_learn/101/stateless_learn.dart';
 import 'package:flutter_full_learn/101/text_learn_view.dart';
 import 'package:flutter_full_learn/101/button_learn.dart';
 
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
           systemOverlayStyle: SystemUiOverlayStyle.light, // for status bar theme color
         )
       ),
-      home: ColorLearn(),
+      home: StatelessLearn(),
     );
   }
 }
