@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../core/random_image.dart';
+
 class ListTileLearn extends StatelessWidget {
   const ListTileLearn({super.key});
-  final imageUrl = 'https://picsum.photos/200/300';
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,7 @@ class ListTileLearn extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: ListTile(
-                title: Image.network(imageUrl, height: 100, fit: BoxFit.cover),
+                title: const RandomImage(),
                 dense: true,
                 subtitle: const Text('This is my card'),
                 minVerticalPadding: 0,
