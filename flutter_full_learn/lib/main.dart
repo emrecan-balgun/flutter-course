@@ -7,6 +7,7 @@ import 'package:flutter_full_learn/101/container_sized_box_learn.dart';
 import 'package:flutter_full_learn/101/custom_widget_learn.dart';
 import 'package:flutter_full_learn/101/icon_learn.dart';
 import 'package:flutter_full_learn/101/image_learn.dart';
+import 'package:flutter_full_learn/101/indicator_learn.dart';
 import 'package:flutter_full_learn/101/padding_learn.dart';
 import 'package:flutter_full_learn/101/scaffold_learn.dart';
 import 'package:flutter_full_learn/101/stateless_learn.dart';
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
+        progressIndicatorTheme: const ProgressIndicatorThemeData(color: Colors.white),
         // cardTheme: CardTheme(
         //   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))
         // ),
@@ -38,7 +40,7 @@ class MyApp extends StatelessWidget {
           systemOverlayStyle: SystemUiOverlayStyle.light, // for status bar theme color
         )
       ),
-      home: CustomWidgetLearn(),
+      home: const IndicatorLearn(),
     );
   }
 }
