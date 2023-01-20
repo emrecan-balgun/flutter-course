@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_full_learn/product/counter_hello_button.dart';
 
 class StatefullLearn extends StatefulWidget {
   const StatefullLearn({super.key});
@@ -9,6 +10,8 @@ class StatefullLearn extends StatefulWidget {
 
 class _StatefullLearnState extends State<StatefullLearn> {
   int _countValue = 0;
+
+  int _counterCustom = 0;
 
   void _updateCounter(bool isIncrement) { // _ koyduk çünkü sadece bu classta kullanılacak
     if(isIncrement) {
@@ -23,7 +26,7 @@ class _StatefullLearnState extends State<StatefullLearn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title: const Text('Merhaba')),
       floatingActionButton: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -35,6 +38,7 @@ class _StatefullLearnState extends State<StatefullLearn> {
         children: [
           Center(child: Text(_countValue.toString(), style: Theme.of(context).textTheme.headline2)),
           const Placeholder(),
+          const CounterHelloButton(),
         ],
       ),
     );
