@@ -17,6 +17,7 @@ import 'package:flutter_full_learn/101/stack_learn.dart';
 import 'package:flutter_full_learn/101/statefull_learn.dart';
 import 'package:flutter_full_learn/101/statefull_life_cycle.dart';
 import 'package:flutter_full_learn/101/stateless_learn.dart';
+import 'package:flutter_full_learn/101/text_field_learn.dart';
 import 'package:flutter_full_learn/101/text_learn_view.dart';
 import 'package:flutter_full_learn/101/button_learn.dart';
 import 'package:flutter_full_learn/demos/note_demos_view.dart';
@@ -41,7 +42,15 @@ class MyApp extends StatelessWidget {
         // cardTheme: CardTheme(
         //   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))
         // ),
-          errorColor: ColorsItems.sulu, // static on color learn        
+          errorColor: ColorsItems.sulu, // static on color learn    
+          inputDecorationTheme: const InputDecorationTheme(
+            filled: true,
+            fillColor: Colors.white,
+            iconColor: Colors.red,
+            labelStyle: TextStyle(color: Colors.lime),
+            border: OutlineInputBorder(),
+            floatingLabelStyle: TextStyle(color: Colors.red, fontSize: 24, fontWeight: FontWeight.w600),           
+          ),    
           appBarTheme: const AppBarTheme(
           centerTitle: true,
           backgroundColor: Colors.transparent,
@@ -49,7 +58,7 @@ class MyApp extends StatelessWidget {
           systemOverlayStyle: SystemUiOverlayStyle.light, // for status bar theme color
         )
       ),
-      home: const StatefullLifeCycleLearn(message: 'Emrecan'),
+      home: const TextFieldLearn(),
     );
   }
 }
