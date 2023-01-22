@@ -20,6 +20,7 @@ import 'package:flutter_full_learn/101/stateless_learn.dart';
 import 'package:flutter_full_learn/101/text_field_learn.dart';
 import 'package:flutter_full_learn/101/text_learn_view.dart';
 import 'package:flutter_full_learn/101/button_learn.dart';
+import 'package:flutter_full_learn/demos/color_demos_view.dart';
 import 'package:flutter_full_learn/demos/note_demos_view.dart';
 
 import 'demos/stack_demos_view.dart';
@@ -47,6 +48,7 @@ class MyApp extends StatelessWidget {
             filled: true,
             fillColor: Colors.white,
             iconColor: Colors.red,
+            
             labelStyle: TextStyle(color: Colors.lime),
             border: OutlineInputBorder(),
             floatingLabelStyle: TextStyle(color: Colors.red, fontSize: 24, fontWeight: FontWeight.w600),           
@@ -58,7 +60,7 @@ class MyApp extends StatelessWidget {
           systemOverlayStyle: SystemUiOverlayStyle.light, // for status bar theme color
         )
       ),
-      home: const TextFieldLearn(),
+      home: const ColorDemos(initialColor: null,),
     );
   }
 }
